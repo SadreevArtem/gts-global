@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./ui/globals.css";
 
@@ -12,18 +12,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "GTS-global",
-  description: "",
-};
+type Props = { children: React.ReactNode };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout({ children }: Props) {
+  const headersList = await headers();
+  const locale = headersList.get("x-next-intl-locale") ?? "en";
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
