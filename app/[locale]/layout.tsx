@@ -4,6 +4,8 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+import { Header } from "@/app/ui/components/Header";
+import { Footer } from "@/app/ui/components/Footer";
 
 export const metadata: Metadata = {
   title: "GTS-global",
@@ -30,7 +32,9 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <Header />
       {children}
+      <Footer />
     </NextIntlClientProvider>
   );
 }
