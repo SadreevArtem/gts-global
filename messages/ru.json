@@ -1,6 +1,17 @@
 {
   "HomePage": {
-    "title": "GTS global"
+    "title": "GTS global",
+    "subtitle": "Международная логистика и перевозки. Надёжно, прозрачно, в срок."
+  },
+  "Header": {
+    "nav": {
+      "home": "Главная",
+      "supplies": "Поставки",
+      "manufacturers": "Производители",
+      "logistics": "Логистика",
+      "about": "О нас",
+      "contacts": "Контакты"
+    }
   },
   "common": {
     "language": "Язык"

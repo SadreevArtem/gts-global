@@ -1,14 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-
-import Image from "next/image";
+import { Link } from "@/i18n/navigation";
 import { Hamburger } from "./Hamburger";
 import { HEADER_MENU } from "./Hamburger/static";
 import { ThemeToggle } from "./ThemeToggle";
+import { useTranslations } from "next-intl";
 
 export const Header: React.FC = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
+  const t = useTranslations("Header");
 
   const onOpen = () => {
     setHamburgerActive(true);
@@ -34,117 +34,96 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="fixed top-0 z-30 w-full bg-transparent p-4 transition-colors duration-300 md:p-5">
+    <header className="fixed top-0 z-30 w-full bg-white/70 backdrop-blur-md p-4 transition-colors duration-300 dark:bg-black/40 md:p-5">
       <div className={"container flex items-center justify-between min-h-6"}>
-        <div className="flex items-center gap-[10px] max-lg:hidden">
+        <div className="flex items-center gap-2.5 max-lg:hidden">
           <div className="flex gap-4">
             <p className="text-foreground">GTS-Global</p>
           </div>
         </div>
 
-        <div className="max-md:hidden xl:text-[20px] lg:px-8 px-2 py-2 text-foreground">
-          <ul className="flex gap-[55px] max-lg:text-sm items-center">
+        <div className="max-md:hidden xl:text-[16px] lg:px-8 px-2 py-2 text-foreground">
+          <ul className="flex max-lg:text-sm items-center gap-[55px]">
             <li>
               <Link
                 className="transition-colors hover:text-foreground/70"
                 href={"/"}
               >
-                Главная
+                {t("nav.home")}
               </Link>
             </li>
             <li>
               <Link
                 className="transition-colors hover:text-foreground/70"
-                href={"/programs"}
+                href={"/supplies"}
               >
-                Программы
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="relative block shrink-0">
-                <Image
-                  src={"/images/logo.svg"}
-                  className="h-auto w-auto md:h-[74px]"
-                  alt="logo"
-                  width={100}
-                  height={100}
-                />
+                {t("nav.supplies")}
               </Link>
             </li>
             <li>
               <Link
                 className="transition-colors hover:text-foreground/70"
-                href={"/masters"}
+                href={"/manufacturers"}
               >
-                Мастера
+                {t("nav.manufacturers")}
               </Link>
             </li>
             <li>
               <Link
                 className="transition-colors hover:text-foreground/70"
-                href={"/vacancies"}
+                href={"/logistics"}
               >
-                Вакансии
+                {t("nav.logistics")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground/70"
+                href={"/about"}
+              >
+                {t("nav.about")}
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="transition-colors hover:text-foreground/70"
+                href={"/contacts"}
+              >
+                {t("nav.contacts")}
               </Link>
             </li>
           </ul>
         </div>
         <nav className="flex items-center gap-4 max-md:w-full">
-          <ul className="flex gap-[28px] items-center max-md:justify-between max-md:w-full">
+          <ul className="flex items-center gap-7 max-md:justify-between max-md:w-full">
+            {/* Desktop theme toggle */}
             <li className="max-md:hidden">
               <ThemeToggle />
             </li>
             <li className="max-md:hidden">
-              <Link className="header-link relative" href="https://t.me/+79220046935">
-                <Image
-                  src={"/images/telegram.svg"}
-                  alt=""
-                  className="hover:opacity-50"
-                  width={30}
-                  height={30}
-                />
-              </Link>
+              <nav className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+                <Link href="/" locale="en">
+                  En
+                </Link>
+                <Link href="/" locale="ru">
+                  Ru
+                </Link>
+                <Link href="/" locale="zh">
+                  中文
+                </Link>
+              </nav>
             </li>
-            <li className="max-md:hidden">
-              <Link
-                className="header-link relative"
-                href={"https://wa.me/79220046935"}
-              >
-                <Image
-                  src={"/images/whatsapp.svg"}
-                  alt=""
-                  className="hover:opacity-50"
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            </li>
-            <li className="max-md:hidden">
-              <Link className="header-link relative" href={`tel:+79220046935`}>
-                <Image
-                  src={"/images/call.svg"}
-                  alt=""
-                  width={30}
-                  height={30}
-                  className="hover:opacity-50"
-                />
-              </Link>
-            </li>
+
+            {/* Mobile logo + theme toggle */}
             {!hamburgerActive ? (
               <li className="md:hidden">
-                <Link href="/" className="relative block shrink-0">
-                  <Image
-                    src={"/images/logo.svg"}
-                    className="h-auto w-auto md:h-[44px]"
-                    alt="logo"
-                    width={43}
-                    height={64}
-                  />
-                </Link>
+                <div className="flex items-center gap-3">
+                  <ThemeToggle />
+                </div>
               </li>
             ) : (
               <li className="">
-                <div className="flex items-center gap-[10px] ">
+                <div className="flex items-center gap-2.5 ">
                   <div className="xl:text-[20px] text-[16px]">
                     <p className="text-foreground">г. Тюмень</p>
                     <p className="text-foreground">ул. Гнаровской, д. 6</p>

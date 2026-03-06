@@ -11,13 +11,30 @@ export default async function HomePage({ params }: Props) {
   const t = await getTranslations("HomePage");
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            {t("title")}
-          </h1>
+    <main className="font-sans">
+      <section
+        className={[
+          "relative isolate overflow-hidden",
+          "min-h-[85vh]",
+          "flex items-stretch",
+          "bg-cover bg-center bg-no-repeat",
+          "bg-[url('/lightbg.jpeg')] dark:bg-[url('/darkbg.jpeg')]",
+        ].join(" ")}
+      >
+        <div className="absolute inset-0 bg-black/35 dark:bg-black/55" />
+        <div className="container relative flex w-full items-center py-24 pt-32 sm:py-28 sm:pt-36">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl">
+              {t("title")}
+            </h1>
+            <p className="mt-4 max-w-xl text-base leading-7 text-white/90 sm:text-lg">
+              {t("subtitle")}
+            </p>
+          </div>
         </div>
+      </section>
+
+      <section className="container py-10">
         <nav className="flex flex-col gap-4 text-base font-medium sm:flex-row">
           <Link href="/" locale="en">
             English
@@ -29,7 +46,7 @@ export default async function HomePage({ params }: Props) {
             中文
           </Link>
         </nav>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

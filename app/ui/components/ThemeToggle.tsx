@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useMemo, useState } from "react";
+import clsx from "clsx";
 
 type Theme = "light" | "dark";
 
@@ -24,7 +25,7 @@ export const ThemeToggle: React.FC = () => {
   return (
     <button
       type="button"
-      className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-foreground/5 px-3 py-2 text-sm text-foreground transition hover:bg-foreground/10"
+      className="inline-flex items-center justify-center"
       onClick={() => {
         const next: Theme = isDark ? "light" : "dark";
         applyTheme(next);
@@ -32,8 +33,15 @@ export const ThemeToggle: React.FC = () => {
       }}
       aria-label={`Переключить тему (сейчас: ${label})`}
     >
-      <span className="hidden sm:inline">Тема</span>
-      <span className="opacity-80">{label}</span>
+      <span className="relative inline-flex h-7 w-14 items-center rounded-full bg-background/60 px-0.5 ring-1 ring-foreground/10">
+        <span
+          aria-hidden="true"
+          className={clsx(
+            "h-5 w-5 rounded-full bg-foreground transition-transform duration-200",
+            isDark ? "translate-x-7" : "translate-x-0",
+          )}
+        />
+      </span>
     </button>
   );
 };

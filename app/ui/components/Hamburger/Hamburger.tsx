@@ -21,7 +21,6 @@ export const Hamburger: React.FC<Props> = ({
   active,
   onOpen,
   onClose,
-  className = "string",
 }) => {
   const onToggle = () => (active ? onClose() : onOpen());
   const { handleOpen } = useModal();
@@ -38,16 +37,16 @@ export const Hamburger: React.FC<Props> = ({
           ЗАПИСАТЬСЯ ОНЛАЙН
         </button> */}
         <button onClick={onToggle} className="flex">
-          <div className={clsx("flex flex-col gap-2 ", { hidden: active })}>
-            <div className={clsx("bg-black w-[38px] h-[2px]")} />
-            <div className={clsx("bg-black w-[38px] h-[2px]")} />
-            <div className={clsx("bg-black w-[38px] h-[2px]")} />
-            <div className={clsx("bg-black w-[38px] h-[2px]")} />
+          <div className={clsx("flex flex-col gap-2", { hidden: active })}>
+            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
           </div>
 
           <AppIcon
             type="close"
-            className={clsx("text-white max-md:w-[32px] max-md:h-[32px]", {
+            className={clsx("max-md:h-8 max-md:w-8 text-foreground", {
               hidden: !active,
             })}
           />

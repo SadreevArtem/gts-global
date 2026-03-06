@@ -1,9 +1,10 @@
 import React from "react";
-import Link from "next/link";
-import { clsx } from "clsx";
-import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import { Link, usePathname } from "@/i18n/navigation";
 import { HeaderMenuItem } from "../Hamburger/static";
 import Image from "next/image";
+import { ThemeToggle } from "../ThemeToggle";
+import { useTranslations } from "next-intl";
 
 type Props = {
   menu: HeaderMenuItem[];
@@ -19,17 +20,21 @@ export const HamburgerMenu: React.FC<Props> = ({
   className = "",
 }) => {
   const pathname = usePathname();
+  const t = useTranslations("Header");
   const paths = pathname.split("/");
   const listItemClassName = "mb-1 last:mb-0 py-2 px-4 rounded-2";
 
   return (
     <div
       className={clsx(
-        "fixed z-40 top-[83px] right-0 left-0 bottom-0 bg-black opacity-1",
+        "fixed right-0 left-0 bottom-0 z-40 top-[83px] bg-black opacity-1",
         className,
       )}
     >
       <div className="container max-h-full pt-1 pb-3 overflow-y-auto flex flex-col gap-4">
+        <div className="mt-2 flex justify-end">
+          <ThemeToggle />
+        </div>
         <nav>
           <ul className="pt-4 font-thin">
             <li
@@ -42,12 +47,12 @@ export const HamburgerMenu: React.FC<Props> = ({
                 className="block w-full text-[24px] font-semibold  text-white"
                 onClick={onClose}
               >
-                Главная
+                {t("nav.home")}
               </Link>
             </li>
             {menu.map((item) => (
               <li
-                key={item.value}
+                key={item.key}
                 className={clsx(listItemClassName, {
                   "bg-bgOpacity": pathname.includes(`${item.href}`),
                 })}
@@ -59,29 +64,29 @@ export const HamburgerMenu: React.FC<Props> = ({
                   )}
                   onClick={onClose}
                 >
-                  {item.value}
+                  {t(`nav.${item.key}`)}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
         <button
-          className="shadow-button mt-12 bg-[#3e3d3d] border border-transparent hover:border-white xl:p-6 p-4 xl:px-[100px] px-[86px] max-md:text-[14px] rounded-[5px] transition w-full text-white"
+          className="shadow-button mt-12 w-full rounded-[5px] border border-transparent bg-[#3e3d3d] p-4 px-[86px] text-white transition hover:border-white max-md:text-[14px] xl:p-6 xl:px-[100px]"
           onClick={handleOpen}
         >
           Записаться онлайн
         </button>
 
         <Link
-          href={""}
-          className=" text-center shadow-button bg-black border border-white xl:p-6 p-4 xl:px-[100px]  max-md:text-[14px] rounded-[5px] transition w-full text-white"
+          href={"https://t.me/"}
+          className="shadow-button w-full rounded-[5px] border border-white bg-black p-4 text-center text-white transition max-md:text-[14px] xl:p-6 xl:px-[100px]"
           onClick={() => {}}
         >
           Telegram-канал
         </Link>
         <Link
           href={"https://wa.me/"}
-          className="text-center shadow-button bg-black border border-white xl:p-6 p-4 xl:px-[100px]  max-md:text-[14px] rounded-[5px] transition w-full text-white"
+          className="shadow-button w-full rounded-[5px] border border-white bg-black p-4 text-center text-white transition max-md:text-[14px] xl:p-6 xl:px-[100px]"
           onClick={() => {}}
         >
           Написать администратору
@@ -89,14 +94,14 @@ export const HamburgerMenu: React.FC<Props> = ({
 
         <div className="self-center mt-2 font-thin text-[22px] flex flex-col gap-4">
           <Link
-            href={``}
-            className="text-white hover:text-hover block text-center"
+            href={`tel:+`}
+            className="block text-center text-white hover:text-hover"
           >
-            link
+            +7 (922) 004-69-35
           </Link>
           <ul className="flex self-center gap-4">
             <li className="">
-              <Link className="header-link relative " href="">
+              <Link className="header-link relative " href="https://t.me/">
                 <Image
                   src={"/images/telegram.svg"}
                   alt=""

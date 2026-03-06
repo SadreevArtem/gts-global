@@ -1,6 +1,17 @@
 {
   "HomePage": {
-    "title": "GTS global"
+    "title": "GTS global",
+    "subtitle": "国际物流与运输。可靠、透明、准时。"
+  },
+  "Header": {
+    "nav": {
+      "home": "首页",
+      "supplies": "供应",
+      "manufacturers": "制造商",
+      "logistics": "物流",
+      "about": "关于我们",
+      "contacts": "联系方式"
+    }
   },
   "common": {
     "language": "语言"

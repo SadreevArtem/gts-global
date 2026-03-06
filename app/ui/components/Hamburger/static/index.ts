@@ -1,19 +1,19 @@
 export type HeaderMenuItem = {
-  value: string;
+  key: "supplies" | "manufacturers" | "logistics";
   href: string;
 };
 
 export const HEADER_MENU: HeaderMenuItem[] = [
   {
-    value: "Что поставляем",
-    href: "/syply",
+    key: "supplies",
+    href: "/supplies",
   },
   {
-    value: "Производители",
-    href: "/factories",
+    key: "manufacturers",
+    href: "/manufacturers",
   },
   {
-    value: "Логистика",
-    href: "/logistic",
+    key: "logistics",
+    href: "/logistics",
   },
 ];
