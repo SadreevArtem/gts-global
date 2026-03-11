@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import Services from "../ui/components/Services/Services";
 import ManufacturersSection from "../ui/components/ManufacturersSection";
 import LogisticsServicesSection from "../ui/components/LogisticsServicesSection";
+import AdvantagesSection from "../ui/components/AdvantagesSection";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -42,6 +43,8 @@ export default async function HomePage({ params }: Props) {
       <ManufacturersSection />
 
       <LogisticsServicesSection />
+
+      <AdvantagesSection />
 
       <section className="container py-10">
         <nav className="flex flex-col gap-4 text-base font-medium sm:flex-row">

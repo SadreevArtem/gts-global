@@ -14,15 +14,15 @@ const services = [
     img: "/services/electric.jpeg",
     id: "electric",
   },
-  { title: "Трубная продукция", img: "/services/pipes.svg", id: "pipes" },
+  { title: "Трубная продукция", img: "/services/pipes.jpeg", id: "pipes" },
   {
     title: "Насосно - компрессорное оборудование",
-    img: "/services/pumps.svg",
+    img: "/services/pumps.jpeg",
     id: "pumps",
   },
   {
     title: "Трубопроводная арматура и соединительные детали",
-    img: "/services/fittings.svg",
+    img: "/services/fittings.jpeg",
     id: "fittings",
   },
 ];

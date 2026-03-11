@@ -67,5 +67,92 @@
         "description": "管材产品"
       }
     }
+  },
+  "LogisticsServices": {
+    "title": "物流服务",
+    "subtitle": "我们在俄罗斯境内提供运输服务",
+    "categories": {
+      "deliveryTypes": {
+        "title": "Виды доставок",
+        "items": {
+          "auto": {
+            "title": "汽车运输",
+            "description": "快速安全的货物运输"
+          },
+          "rail": {
+            "title": "铁路运输",
+            "description": "经济环保的货物运输方式"
+          },
+          "marine": {
+            "title": "海洋运输",
+            "description": ""
+          }
+        }
+      },
+      "warehousing": {
+        "title": "仓储",
+        "items": {
+          "storage": {
+            "title": "现代仓库设施中的货物存储",
+            "description": ""
+          },
+          "handling": {
+            "title": "货物处理，包括包装、标记和分拣",
+            "description": ""
+          },
+          "quality": {
+            "title": "质量控制、货物保管和保险",
+            "description": ""
+          }
+        }
+      },
+      "customs": {
+        "title": "报关",
+        "items": {
+          "docs": {
+            "title": "准备报关所需文件",
+            "description": ""
+          },
+          "duties": {
+            "title": "缴纳关税和费用",
+            "description": ""
+          },
+          "compliance": {
+            "title": "遵守所有海关要求和规则",
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "Advantages": {
+    "title": "我们的优势",
+    "subtitle": "公司的核心是灵活的方式和严格的技术控制。我们的工作原则是专业和负责。",
+    "items": {
+      "certificates": {
+        "title": "拥有证书和合格证",
+        "description": "作为质量保证，我们直接从制造商供货。"
+      },
+      "quality": {
+        "title": "高质量产品",
+        "description": "所有产品均经过必要认证并符合 ГОСТ 标准。"
+      },
+      "deadlines": {
+        "title": "遵守交货期限",
+        "description": "无论订单规模和特点，我们都按约定时间交货。"
+      },
+      "service": {
+        "title": "个性化服务",
+        "description": "个性化服务，及时专业解决各种难题。"
+      },
+      "payment": {
+        "title": "最佳付款条件",
+        "description": "可无预付款合作，支持延期付款和保理。"
+      },
+      "warranty": {
+        "title": "履约保证",
+        "description": "提供银行担保，并采用银行托管方式。"
+      }
+    }
   }
 }

@@ -67,5 +67,92 @@
         "description": "Pipe Products"
       }
     }
+  },
+  "LogisticsServices": {
+    "title": "Logistics Services",
+    "subtitle": "We deliver across Russia",
+    "categories": {
+      "deliveryTypes": {
+        "title": "Types of Delivery",
+        "items": {
+          "auto": {
+            "title": "Road Transport",
+            "description": "Fast and secure freight delivery"
+          },
+          "rail": {
+            "title": "Rail Transport",
+            "description": "Economical and eco-friendly freight delivery"
+          },
+          "marine": {
+            "title": "Sea Transport",
+            "description": ""
+          }
+        }
+      },
+      "warehousing": {
+        "title": "Warehouse Storage",
+        "items": {
+          "storage": {
+            "title": "Storage in modern warehouse facilities",
+            "description": ""
+          },
+          "handling": {
+            "title": "Cargo handling including packing, labeling and sorting",
+            "description": ""
+          },
+          "quality": {
+            "title": "Quality control, cargo preservation and insurance",
+            "description": ""
+          }
+        }
+      },
+      "customs": {
+        "title": "Customs Clearance",
+        "items": {
+          "docs": {
+            "title": "Preparation of documents for customs clearance",
+            "description": ""
+          },
+          "duties": {
+            "title": "Payment of customs duties and fees",
+            "description": ""
+          },
+          "compliance": {
+            "title": "Compliance with all customs requirements and rules",
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "Advantages": {
+    "title": "Our Advantages",
+    "subtitle": "The core of our business is a flexible approach and strict technical control. The key principles of our work are professionalism and responsibility.",
+    "items": {
+      "certificates": {
+        "title": "Availability of passports and certificates",
+        "description": "As a quality guarantee, we supply directly from manufacturers."
+      },
+      "quality": {
+        "title": "High-quality products",
+        "description": "All products are certified and comply with GOST standards."
+      },
+      "deadlines": {
+        "title": "Meeting delivery deadlines",
+        "description": "We keep agreed delivery times regardless of order specifics and volume."
+      },
+      "service": {
+        "title": "Personalized service",
+        "description": "Individual approach and professional support for tasks of any complexity."
+      },
+      "payment": {
+        "title": "Optimal payment terms",
+        "description": "Option to work without prepayment, with payment deferral and factoring."
+      },
+      "warranty": {
+        "title": "Performance guarantees",
+        "description": "We provide bank guarantees and work with banking support."
+      }
+    }
   }
 }

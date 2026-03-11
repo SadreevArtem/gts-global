@@ -1,96 +1,60 @@
 import React from "react";
+import { getTranslations } from "next-intl/server";
 import { AppIcon } from "../AppIcon";
 
-const services = [
+const categories = [
   {
-    title: "Виды доставок",
-    items: [
-      {
-        title: "Автомобильные перевозки",
-        description: "быстрая и безопасная доставка грузов",
-      },
-      {
-        title: "Железнодорожные перевозки",
-        description:
-          "экономичный и экологически чистый способ перевозки грузов",
-      },
-      {
-        title: "Морские перевозки",
-        description: "",
-      },
-    ],
+    id: "deliveryTypes",
+    items: [{ id: "auto" }, { id: "rail" }, { id: "marine" }],
   },
   {
-    title: "Складское хранение",
-    items: [
-      {
-        title: "Хранение грузов в современных складских помещениях",
-        description: "",
-      },
-      {
-        title: "Обработка грузов, включая упаковку, маркировку и сортировку",
-        description: "",
-      },
-      {
-        title:
-          "Контроль качества и обеспечение сохранности грузов, страхование",
-        description: "",
-      },
-    ],
+    id: "warehousing",
+    items: [{ id: "storage" }, { id: "handling" }, { id: "quality" }],
   },
   {
-    title: "Таможенное оформление",
-    items: [
-      {
-        title: "Подготовка необходимых документов для таможенного оформления",
-        description: "",
-      },
-      {
-        title: "Оплата таможенных пошлин и сборов",
-        description: "",
-      },
-      {
-        title: "Соблюдение всех таможенных требований и правил",
-        description: "",
-      },
-    ],
+    id: "customs",
+    items: [{ id: "docs" }, { id: "duties" }, { id: "compliance" }],
   },
 ];
 
-export default function LogisticsServicesSection() {
+export default async function LogisticsServicesSection() {
+  const t = await getTranslations("LogisticsServices");
+
   return (
     <section className="container py-16">
-      <h2 className="text-2xl font-semibold mb-2 text-center">
-        Логистические услуги
-      </h2>
+      <h2 className="text-2xl font-semibold mb-2 text-center">{t("title")}</h2>
       <p className="text-center text-base text-gray-600 dark:text-gray-300 mb-10">
-        Осуществляем доставку по территории России
+        {t("subtitle")}
       </p>
 
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((category) => (
+        {categories.map((category) => (
           <div
-            key={category.title}
+            key={category.id}
             className="rounded-none bg-white dark:bg-gray-900 shadow-md p-6"
           >
             <h3 className="text-lg font-medium text-gray-800 dark:text-gray-100 mb-4">
-              {category.title}
+              {t(`categories.${category.id}.title`)}
             </h3>
             <div className="space-y-4">
               {category.items.map((item) => (
-                <div key={item.title} className="flex flex-col gap-1">
+                <div key={item.id} className="flex flex-col gap-1">
                   <div className="flex items-start gap-3">
                     <AppIcon
                       type="check"
                       className="w-5 h-5 text-brand dark:text-gray-400 mt-0.5"
                     />
                     <span className="font-medium text-gray-800 dark:text-gray-100">
-                      {item.title}
+                      {t(`categories.${category.id}.items.${item.id}.title`)}
                     </span>
                   </div>
-                  {item.description ? (
+                  {t(
+                    `categories.${category.id}.items.${item.id}.description`,
+                  ) ? (
                     <p className="text-sm text-gray-600 dark:text-gray-300">
-                      {item.description}
+                      {t(
+                        `categories.${category.id}.items.${item.id}.description`,
+                      )}
                     </p>
                   ) : null}
                 </div>
