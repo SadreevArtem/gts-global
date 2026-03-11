@@ -16,4 +16,16 @@
   "common": {
     "language": "语言"
   }
+  ,
+  "Services": {
+    "title": "我们的服务",
+    "items": {
+      "neft": "油气设备",
+      "ship": "船用设备",
+      "electric": "电气设备",
+      "pipes": "管材产品",
+      "pumps": "泵与压缩机设备",
+      "fittings": "管道阀件与连接件"
+    }
+  }
 }

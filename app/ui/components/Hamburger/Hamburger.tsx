@@ -27,21 +27,12 @@ export const Hamburger: React.FC<Props> = ({
   return (
     <>
       <div className="flex">
-        {/* <button
-          className={clsx(
-            "mr-2 bg-bg-opacity text-white px-6 py-2 text-[10px] rounded-[80px] hover:bg-black transition hover:text-primary",
-            { hidden: !active }
-          )}
-          onClick={handleOpen}
-        >
-          ЗАПИСАТЬСЯ ОНЛАЙН
-        </button> */}
-        <button onClick={onToggle} className="flex">
-          <div className={clsx("flex flex-col gap-2", { hidden: active })}>
-            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
-            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
-            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
-            <div className={clsx("h-0.5 w-[38px] bg-foreground")} />
+        <button onClick={onToggle} className="flex h-8 items-center">
+          <div className={clsx("flex flex-col gap-1", { hidden: active })}>
+            <div className={clsx("h-0.5 w-[32px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[32px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[32px] bg-foreground")} />
+            <div className={clsx("h-0.5 w-[32px] bg-foreground")} />
           </div>
 
           <AppIcon

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import Services from "../ui/components/Services/Services";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -33,6 +34,8 @@ export default async function HomePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      <Services />
 
       <section className="container py-10">
         <nav className="flex flex-col gap-4 text-base font-medium sm:flex-row">

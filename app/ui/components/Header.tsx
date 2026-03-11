@@ -117,16 +117,15 @@ export const Header: React.FC = () => {
             {/* Mobile logo + theme toggle */}
             {!hamburgerActive ? (
               <li className="md:hidden">
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <ThemeToggle />
-                </div>
+                </div> */}
               </li>
             ) : (
               <li className="">
                 <div className="flex items-center gap-2.5 ">
                   <div className="xl:text-[20px] text-[16px]">
-                    <p className="text-foreground">г. Тюмень</p>
-                    <p className="text-foreground">ул. Гнаровской, д. 6</p>
+                    <p className="text-foreground">GTS-GLOBAL</p>
                   </div>
                 </div>
               </li>

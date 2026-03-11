@@ -16,4 +16,16 @@
   "common": {
     "language": "Language"
   }
+  ,
+  "Services": {
+    "title": "Our services",
+    "items": {
+      "neft": "Oil & Gas Equipment",
+      "ship": "Marine Equipment",
+      "electric": "Electrical Equipment",
+      "pipes": "Pipe Products",
+      "pumps": "Pumping & Compressor Equipment",
+      "fittings": "Pipeline Fittings and Connectors"
+    }
+  }
 }

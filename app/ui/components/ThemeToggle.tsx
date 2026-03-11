@@ -25,7 +25,7 @@ export const ThemeToggle: React.FC = () => {
   return (
     <button
       type="button"
-      className="inline-flex items-center justify-center"
+      className="inline-flex items-center justify-center scale-75"
       onClick={() => {
         const next: Theme = isDark ? "light" : "dark";
         applyTheme(next);
@@ -45,4 +45,3 @@ export const ThemeToggle: React.FC = () => {
     </button>
   );
 };
-
