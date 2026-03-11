@@ -15,8 +15,7 @@
   },
   "common": {
     "language": "Язык"
-  }
-  ,
+  },
   "Services": {
     "title": "Наши сервисы",
     "items": {
@@ -26,6 +25,47 @@
       "pipes": "Трубная продукция",
       "pumps": "Насосно - компрессорное оборудование",
       "fittings": "Трубопроводная арматура и соединительные детали"
+    }
+  },
+  "Manufacturers": {
+    "title": "Производители импортного оборудования и запасных частей",
+    "items": {
+      "nov": {
+        "name": "National Oilwell Varco \"NOV\", США",
+        "description": "Нефтегазовое оборудование"
+      },
+      "siemens": {
+        "name": "Siemens, Германия",
+        "description": "Электротехническое оборудование"
+      },
+      "gutor": {
+        "name": "Gutor",
+        "description": "Системы бесперебойного питания"
+      },
+      "cummins": {
+        "name": "Cummins, США",
+        "description": "Двигатели, Генераторы и Энергосистемы"
+      },
+      "waukesha": {
+        "name": "Waukesha, Германия",
+        "description": "Газопоршневые двигатели"
+      },
+      "mtu": {
+        "name": "MTU Friedrichshafen, Германия",
+        "description": "Дизельные, Газопоршневые и Судовые двигатели"
+      },
+      "caterpillar": {
+        "name": "Caterpillar, США",
+        "description": "Двигатели, Генераторы и Энергосистемы"
+      },
+      "cameron": {
+        "name": "Cameron, США",
+        "description": "Нефтегазовое оборудование"
+      },
+      "tpco": {
+        "name": "TPCO, КНР",
+        "description": "Трубная продукция"
+      }
     }
   }
 }

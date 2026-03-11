@@ -15,8 +15,7 @@
   },
   "common": {
     "language": "Language"
-  }
-  ,
+  },
   "Services": {
     "title": "Our services",
     "items": {
@@ -26,6 +25,47 @@
       "pipes": "Pipe Products",
       "pumps": "Pumping & Compressor Equipment",
       "fittings": "Pipeline Fittings and Connectors"
+    }
+  },
+  "Manufacturers": {
+    "title": "Manufacturers of imported equipment and spare parts",
+    "items": {
+      "nov": {
+        "name": "National Oilwell Varco \"NOV\", USA",
+        "description": "Oil & Gas Equipment"
+      },
+      "siemens": {
+        "name": "Siemens, Germany",
+        "description": "Electrical Equipment"
+      },
+      "gutor": {
+        "name": "Gutor",
+        "description": "Uninterruptible Power Systems"
+      },
+      "cummins": {
+        "name": "Cummins, USA",
+        "description": "Engines, Generators & Power Systems"
+      },
+      "waukesha": {
+        "name": "Waukesha, Germany",
+        "description": "Gas Piston Engines"
+      },
+      "mtu": {
+        "name": "MTU Friedrichshafen, Germany",
+        "description": "Diesel, Gas Piston & Marine Engines"
+      },
+      "caterpillar": {
+        "name": "Caterpillar, USA",
+        "description": "Engines, Generators & Power Systems"
+      },
+      "cameron": {
+        "name": "Cameron, USA",
+        "description": "Oil & Gas Equipment"
+      },
+      "tpco": {
+        "name": "TPCO, China",
+        "description": "Pipe Products"
+      }
     }
   }
 }

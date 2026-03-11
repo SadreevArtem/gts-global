@@ -33,7 +33,7 @@ export default async function Services() {
   return (
     <section className="container py-16">
       <h2 className="text-2xl font-semibold mb-8">{t("title")}</h2>
-      <div className="border-b-2 border-gray-400 mb-8 w-[70%]"></div>
+      <div className="border-b-2 border-gray-400 mb-8 w-[70%] opacity-15"></div>
 
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {services.map((s) => (

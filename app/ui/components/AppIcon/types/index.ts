@@ -4,6 +4,7 @@ export type IconType =
   | "star-filled"
   | "close"
   | "chevron-right"
+  | "arrow-right"
   | "phone"
   | "search"
   | "cart"

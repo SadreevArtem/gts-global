@@ -15,8 +15,7 @@
   },
   "common": {
     "language": "语言"
-  }
-  ,
+  },
   "Services": {
     "title": "我们的服务",
     "items": {
@@ -26,6 +25,47 @@
       "pipes": "管材产品",
       "pumps": "泵与压缩机设备",
       "fittings": "管道阀件与连接件"
+    }
+  },
+  "Manufacturers": {
+    "title": "进口设备和备件制造商",
+    "items": {
+      "nov": {
+        "name": "National Oilwell Varco \"NOV\", 美国",
+        "description": "油气设备"
+      },
+      "siemens": {
+        "name": "西门子, 德国",
+        "description": "电气设备"
+      },
+      "gutor": {
+        "name": "Gutor",
+        "description": "不间断电源系统"
+      },
+      "cummins": {
+        "name": "康明斯, 美国",
+        "description": "发动机、发电机与动力系统"
+      },
+      "waukesha": {
+        "name": "瓦克夏, 德国",
+        "description": "燃气活塞发动机"
+      },
+      "mtu": {
+        "name": "MTU Friedrichshafen, 德国",
+        "description": "柴油、燃气活塞与船用发动机"
+      },
+      "caterpillar": {
+        "name": "卡特彼勒, 美国",
+        "description": "发动机、发电机与动力系统"
+      },
+      "cameron": {
+        "name": "Cameron, 美国",
+        "description": "油气设备"
+      },
+      "tpco": {
+        "name": "TPCO, 中国",
+        "description": "管材产品"
+      }
     }
   }
 }
