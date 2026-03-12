@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { Header } from "@/app/ui/components/Header";
-import { Footer } from "@/app/ui/components/Footer";
+import Footer from "../ui/components/Footer";
 
 export const metadata: Metadata = {
   title: "GTS-global",

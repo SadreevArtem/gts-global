@@ -154,5 +154,60 @@
         "description": "提供银行担保，并采用银行托管方式。"
       }
     }
+  },
+  "Contact": {
+    "title": "联系我们",
+    "subtitle": "我们随时准备回答您的咨询。给我们留言，我们将尽快与您联系。",
+    "contactInfo": {
+      "title": "联系信息",
+      "address": "地址稍后添加",
+      "phone": "电话稍后添加",
+      "email": "邮箱稍后添加"
+    },
+    "form": {
+      "title": "发送消息",
+      "name": "您的姓名",
+      "namePlaceholder": "请输入姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "请输入邮箱",
+      "phone": "电话",
+      "phonePlaceholder": "请输入电话",
+      "message": "留言",
+      "messagePlaceholder": "在此输入您的留言...",
+      "submit": "发送消息"
+    }
+  },
+  "Footer": {
+    "company": {
+      "name": "GTS global",
+      "description": "可靠的工业设备和配件供应商，面向造船、海上平台和工业设施。"
+    },
+    "navigation": {
+      "title": "导航",
+      "home": "首页",
+      "about": "关于我们",
+      "services": "服务",
+      "manufacturers": "制造商",
+      "logistics": "物流",
+      "contact": "联系方式"
+    },
+    "services": {
+      "title": "服务",
+      "equipment": "工业设备供应",
+      "logistics": "物流服务",
+      "storage": "仓储",
+      "customs": "报关"
+    },
+    "contact": {
+      "title": "联系方式",
+      "address": "地址稍后添加",
+      "phone": "电话稍后添加",
+      "email": "邮箱稍后添加"
+    },
+    "bottom": {
+      "copyright": "版权所有。",
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    }
   }
 }

@@ -154,5 +154,60 @@
         "description": "Предоставление банковских гарантий, работа с применением банковского сопровождения"
       }
     }
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "Готовы ответить на ваши вопросы. Напишите нам — мы свяжемся с вами в ближайшее время.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": "Address will be added later",
+      "phone": "Phone will be added later",
+      "email": "Email will be added later"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter your phone",
+      "message": "Message",
+      "messagePlaceholder": "Type your message here...",
+      "submit": "Send Message"
+    }
+  },
+  "Footer": {
+    "company": {
+      "name": "GTS global",
+      "description": "Надежный поставщик промышленного оборудования и комплектующих для судостроения, морских платформ и промышленных объектов."
+    },
+    "navigation": {
+      "title": "Навигация",
+      "home": "Главная",
+      "about": "О нас",
+      "services": "Сервисы",
+      "manufacturers": "Производители",
+      "logistics": "Логистика",
+      "contact": "Контакты"
+    },
+    "services": {
+      "title": "Сервисы",
+      "equipment": "Поставка промышленного оборудования",
+      "logistics": "Логистические услуги",
+      "storage": "Складское хранение",
+      "customs": "Таможенное оформление"
+    },
+    "contact": {
+      "title": "Контакты",
+      "address": "Адрес будет добавлен позже",
+      "phone": "Телефон будет добавлен позже",
+      "email": "Email будет добавлен позже"
+    },
+    "bottom": {
+      "copyright": "Все права защищены.",
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия использования"
+    }
   }
 }

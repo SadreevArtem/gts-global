@@ -154,5 +154,60 @@
         "description": "We provide bank guarantees and work with banking support."
       }
     }
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "subtitle": "We are ready to answer your inquiries. Send us a message and we will contact you shortly.",
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": "Address will be added later",
+      "phone": "Phone will be added later",
+      "email": "Email will be added later"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter your phone",
+      "message": "Message",
+      "messagePlaceholder": "Type your message here...",
+      "submit": "Send Message"
+    }
+  },
+  "Footer": {
+    "company": {
+      "name": "GTS global",
+      "description": "Reliable supplier of industrial equipment and components for shipbuilding, offshore platforms and industrial facilities."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "manufacturers": "Manufacturers",
+      "logistics": "Logistics",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services",
+      "equipment": "Industrial equipment supply",
+      "logistics": "Logistics services",
+      "storage": "Warehouse storage",
+      "customs": "Customs clearance"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Address will be added later",
+      "phone": "Phone will be added later",
+      "email": "Email will be added later"
+    },
+    "bottom": {
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
   }
 }
