@@ -156,25 +156,25 @@
     }
   },
   "Contact": {
-    "title": "Get in Touch",
+    "title": "Свяжитесь с нами",
     "subtitle": "Готовы ответить на ваши вопросы. Напишите нам — мы свяжемся с вами в ближайшее время.",
     "contactInfo": {
-      "title": "Contact Information",
-      "address": "Address will be added later",
-      "phone": "Phone will be added later",
-      "email": "Email will be added later"
+      "title": "Контактная информация",
+      "address": "Адрес будет добавлен позже",
+      "phone": "Телефон будет добавлен позже",
+      "email": "Email будет добавлен позже"
     },
     "form": {
-      "title": "Send us a message",
-      "name": "Your Name",
-      "namePlaceholder": "Enter your name",
+      "title": "Отправьте нам сообщение",
+      "name": "Ваше имя",
+      "namePlaceholder": "Введите ваше имя",
       "email": "Email",
-      "emailPlaceholder": "Enter your email",
-      "phone": "Phone",
-      "phonePlaceholder": "Enter your phone",
-      "message": "Message",
-      "messagePlaceholder": "Type your message here...",
-      "submit": "Send Message"
+      "emailPlaceholder": "Введите ваш email",
+      "phone": "Телефон",
+      "phonePlaceholder": "Введите ваш телефон",
+      "message": "Сообщение",
+      "messagePlaceholder": "Напишите ваше сообщение...",
+      "submit": "Отправить"
     }
   },
   "Footer": {
